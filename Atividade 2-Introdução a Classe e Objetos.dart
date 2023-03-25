@@ -56,4 +56,23 @@ void main() {
 }
 
 //03//
+import 'dart:math';
+
+class Plano_Cartesiano {
+  int x = 0;
+  int y = 0;
+
+  void operacao(int x, int y) {
+    double distancia = sqrt((x * x) + (y * y));
+    print("A distância do ponto(${x},${y}) para sua origem(0,0) é ${distancia}");
+  }
+}
+
+void main() {
+  Plano_Cartesiano ponto = Plano_Cartesiano();
+
+  ponto.operacao(5,5);
+}
+
+//04//
 
