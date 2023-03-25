@@ -1,4 +1,4 @@
-//Licenciatura Plena em Computação(Turma:226)
+//Licenciatura em Computação(Turma:326)
 //Disciplina: Programação Orientada a Objetos
 //Alan Alexandre Sampaio
 //Atividade 2 - Introdução a Classe e Objetos
