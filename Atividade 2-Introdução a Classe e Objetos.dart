@@ -1,3 +1,8 @@
+//Licenciatura Plena em Computação(Turma:226)
+//Disciplina: Programação Orientada a Objetos
+//Alan Alexandre Sampaio
+//Atividade 2 - Introdução a Classe e Objetos
+
 //01//
 class Lampada {
 
