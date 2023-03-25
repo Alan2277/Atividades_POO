@@ -76,3 +76,39 @@ void main() {
 
 //04//
 
+
+//05//
+
+
+//06//
+class Carro {
+  int distancia = 0;
+  int tanque = 0;
+
+  void andar() {
+    if (tanque >= 5) {
+      distancia = distancia + 5;
+      tanque = tanque - 5;
+    }
+    print("Distancia = ${distancia} \nTanque = ${tanque}");
+  }
+
+  void abastecer(int valor) {
+    tanque = tanque + valor;
+    print("Tanque depois de abastecido = ${tanque}");
+  }
+}
+
+void main() {
+  Carro auto = Carro();
+
+  auto.distancia = 5;
+  auto.tanque = 10;
+
+  auto.andar();
+  auto.abastecer(25);
+}
+
+
+//07//
+
