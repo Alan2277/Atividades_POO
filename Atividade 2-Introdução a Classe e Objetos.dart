@@ -58,7 +58,7 @@ void main() {
 //03//
 import 'dart:math';
 
-class Plano_Cartesiano {
+class Ponto {
   int x = 0;
   int y = 0;
 
@@ -69,7 +69,7 @@ class Plano_Cartesiano {
 }
 
 void main() {
-  Plano_Cartesiano ponto = Plano_Cartesiano();
+  Ponto ponto = Ponto();
 
   ponto.operacao(5,5);
 }
