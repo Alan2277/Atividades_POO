@@ -111,4 +111,25 @@ void main() {
 
 
 //07//
+class Disciplina {
+  String matricula = "";
+  double nota = 0.0;
+
+  void infor() {
+    print("Matricula: ${matricula} \nNota: ${nota}");
+  }
+}
+
+void main() {
+  Disciplina aluno = Disciplina();
+
+  aluno.matricula = "2023221LCOM1852";
+  aluno.nota = 9.5;
+
+  aluno.infor();
+}
+
+
+//08//
+
 
