@@ -131,5 +131,43 @@ void main() {
 
 
 //08//
+class Disciplina {
+  String matricula = "";
+  List<double> lista_notas = [];
+
+  void infor() {
+    print("Matricula: ${matricula}");
+  }
+
+  void adicionarNota(double valor) {
+    lista_notas.add(valor);
+  }
+
+  void calcularMedia() {
+    double somatorio = 0;
+    double media = 0;
+    for (int i = 0; i < lista_notas.length; i++) {
+      somatorio = somatorio + lista_notas[i];
+    }
+    media = somatorio / lista_notas.length;
+    print("Notas = ${lista_notas}");
+    print("Media = ${media}");
+  }
+}
+
+void main() {
+  Disciplina aluno = Disciplina();
+
+  aluno.matricula = "2023221LCOM1852";
+
+  aluno.infor();
+  aluno.adicionarNota(8.0);
+  aluno.adicionarNota(5.5);
+  aluno.adicionarNota(7.5);
+  aluno.adicionarNota(10);
+
+  aluno.calcularMedia();
+}
+
 
 
