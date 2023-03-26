@@ -75,6 +75,33 @@ void main() {
 }
 
 //04//
+import 'dart:math';
+
+class Ponto {
+  int x = 0;
+  int y = 0;
+
+  void operacao() {
+    double distancia = sqrt((x * x) + (y * y));
+    print(
+        "A distância do ponto(${x},${y}) para sua origem(0,0) é ${distancia}");
+  }
+
+  String toString() {
+    return "(${x},${y})";
+  }
+}
+
+void main() {
+  Ponto ponto = Ponto();
+
+  ponto.x = 5;
+  ponto.y = 5;
+
+  ponto.operacao();
+  print("Ponto formato string = ${ponto.toString()}");
+}
+
 
 
 //05//
