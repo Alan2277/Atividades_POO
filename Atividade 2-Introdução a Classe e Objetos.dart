@@ -85,24 +85,24 @@ class Ponto {
   int x = 0;
   int y = 0;
 
-  void operacao() {
+  void calcular_distancia() {
     double distancia = sqrt((x * x) + (y * y));
     print(
         "A distância do ponto(${x},${y}) para sua origem(0,0) é ${distancia}");
   }
 
   String toString() {
-    return "(${x},${y})";
+    return "(${x}, ${y})";
   }
 }
 
 void main() {
   Ponto ponto = Ponto();
 
-  ponto.x = 5;
-  ponto.y = 5;
+  ponto.x = 7;
+  ponto.y = 3;
 
-  ponto.operacao();
+  ponto.calcular_distancia();
   print("Ponto formato string = ${ponto.toString()}");
 }
 
