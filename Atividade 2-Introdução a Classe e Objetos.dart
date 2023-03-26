@@ -19,14 +19,14 @@ class Lampada {
 }
 
 void main() {
-  Lampada estado = Lampada();
+  Lampada lampada = Lampada();
 
-  estado.apagada = "apagada";
-  estado.acesa = "acesa";
-  estado.apagada = "apagada";
-  estado.acesa = "acesa";
+  lampada.apagada = "apagada";
+  lampada.acesa = "acesa";
+  lampada.apagada = "apagada";
+  lampada.acesa = "acesa";
 
-  estado.acender();
+  lampada.acender();
 }
 
 //02//
