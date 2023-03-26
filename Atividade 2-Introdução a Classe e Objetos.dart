@@ -139,8 +139,8 @@ class Disciplina {
     print("Matricula: ${matricula}");
   }
 
-  void adicionarNota(double valor) {
-    lista_notas.add(valor);
+  void adicionarNota(double valor_nota) {
+    lista_notas.add(valor_nota);
   }
 
   void calcularMedia() {
@@ -168,6 +168,7 @@ void main() {
 
   aluno.calcularMedia();
 }
+
 
 
 
