@@ -74,8 +74,7 @@ void main() {
   ponto.x = 7;
   ponto.y = 3;
   
-  print(
-      "Distancia do ponto 1(${ponto.x},${ponto.y}) para o inicio(0,0) = ${ponto.calcular_distancia()}");
+  print("Distancia do ponto 1(${ponto.x},${ponto.y}) para o inicio(0,0) = ${ponto.calcular_distancia()}");
 }
 
 
@@ -102,8 +101,7 @@ void main() {
   ponto.x = 7;
   ponto.y = 3;
 
-  print(
-      "Distancia do ponto 1(${ponto.x},${ponto.y}) para o inicio(0,0) = ${ponto.calcular_distancia()}");
+  print("Distancia do ponto 1(${ponto.x},${ponto.y}) para o inicio(0,0) = ${ponto.calcular_distancia()}");
 
   print("Ponto formato string = ${ponto.toString()}");
 }
@@ -133,8 +131,7 @@ void main() {
   ponto1.y = 3;
 
   print("Ponto 1 formato string = ${ponto1.toString()}");
-  print(
-      "Distancia do ponto 1 para o inicio = ${ponto1.calcular_distancia()}\n\n");
+  print("Distancia do ponto 1 para o inicio = ${ponto1.calcular_distancia()}\n\n");
 
   Ponto ponto2 = Ponto();
 
@@ -142,17 +139,14 @@ void main() {
   ponto2.y = 5;
 
   print("Ponto 2 formato string = ${ponto2.toString()}");
-  print(
-      "Distancia do ponto 2 para inicio = ${ponto2.calcular_distancia()}\n\n");
+  print("Distancia do ponto 2 para inicio = ${ponto2.calcular_distancia()}\n\n");
 
   if (ponto1.calcular_distancia() > ponto2.calcular_distancia()) {
-    print(
-        "Ponto 1 = ${ponto1.calcular_distancia()} > Ponto 2 = ${ponto2.calcular_distancia()}");
+    print("Ponto 1 = ${ponto1.calcular_distancia()} > Ponto 2 = ${ponto2.calcular_distancia()}");
     print("Ponto 1(${ponto1.x},${ponto1.y}) mais distante da origem.");
 
   } else {
-    print(
-        "Ponto 2 = ${ponto2.calcular_distancia()} > Ponto 1 = ${ponto1.calcular_distancia()}");
+    print("Ponto 2 = ${ponto2.calcular_distancia()} > Ponto 1 = ${ponto1.calcular_distancia()}");
     print("Ponto 2(${ponto2.x},${ponto2.y}) mais distante da origem.");
   }
 }
