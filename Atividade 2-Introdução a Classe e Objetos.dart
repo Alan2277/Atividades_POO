@@ -109,6 +109,53 @@ void main() {
 
 
 //05//
+import 'dart:math';
+
+class Ponto {
+  int x = 0;
+  int y = 0;
+
+  double calcular_distancia() {
+    double distancia = sqrt((x * x) + (y * y));
+    return distancia;
+  }
+
+  String toString() {
+    return "(${x}, ${y})";
+  }
+}
+
+void main() {
+  Ponto ponto1 = Ponto();
+
+  ponto1.x = 7;
+  ponto1.y = 3;
+
+  print("Ponto 1 formato string = ${ponto1.toString()}");
+  print(
+      "Distancia do ponto 1 para o inicio = ${ponto1.calcular_distancia()}\n\n");
+
+  Ponto ponto2 = Ponto();
+
+  ponto2.x = 8;
+  ponto2.y = 5;
+
+  print("Ponto 2 formato string = ${ponto2.toString()}");
+  print(
+      "Distancia do ponto 2 para inicio = ${ponto2.calcular_distancia()}\n\n");
+
+  if (ponto1.calcular_distancia() > ponto2.calcular_distancia()) {
+    print(
+        "Ponto 1 = ${ponto1.calcular_distancia()} > Ponto 2 = ${ponto2.calcular_distancia()}");
+    print("Ponto 1(${ponto1.x},${ponto1.y}) mais distante da origem.");
+
+  } else {
+    print(
+        "Ponto 2 = ${ponto2.calcular_distancia()} > Ponto 1 = ${ponto1.calcular_distancia()}");
+    print("Ponto 2(${ponto2.x},${ponto2.y}) mais distante da origem.");
+  }
+}
+
 
 
 //06//
