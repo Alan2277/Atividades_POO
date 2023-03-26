@@ -231,8 +231,6 @@ class Aluno {
       print("Situação = REPROVADO");
     }
   }
-
-  
 }
 
 
