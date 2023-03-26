@@ -203,7 +203,7 @@ void main() {
 
 
 //08//
-class Disciplina {
+class Aluno {
   String matricula = "";
   List<double> lista_notas = [];
 
@@ -231,11 +231,13 @@ class Disciplina {
       print("Situação = REPROVADO");
     }
   }
+
+  
 }
 
 
 void main() {
-  Disciplina aluno = Disciplina();
+  Aluno aluno = Aluno();
 
   aluno.matricula = "2023221LCOM1852";
 
@@ -247,3 +249,4 @@ void main() {
 
   aluno.calcularMedia();
 }
+
