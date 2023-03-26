@@ -86,10 +86,9 @@ class Ponto {
   int x = 0;
   int y = 0;
 
-  void calcular_distancia() {
+  double calcular_distancia() {
     double distancia = sqrt((x * x) + (y * y));
-    print(
-        "A distância do ponto(${x},${y}) para sua origem(0,0) é ${distancia}");
+    return distancia;
   }
 
   String toString() {
@@ -103,10 +102,11 @@ void main() {
   ponto.x = 7;
   ponto.y = 3;
 
-  ponto.calcular_distancia();
+  print(
+      "Distancia do ponto 1(${ponto.x},${ponto.y}) para o inicio(0,0) = ${ponto.calcular_distancia()}");
+
   print("Ponto formato string = ${ponto.toString()}");
 }
-
 
 
 //05//
@@ -158,54 +158,53 @@ void main() {
 }
 
 
-
 //06//
 class Carro {
-  int distancia = 0;
-  int tanque = 0;
+  int distancia_largada = 0;
+  int tanque_combus = 0;
 
   void andar() {
-    if (tanque >= 5) {
-      distancia = distancia + 5;
-      tanque = tanque - 5;
+    if (tanque_combus >= 5) {
+      distancia_largada = distancia_largada + 5;
+      tanque_combus = tanque_combus - 5;
     }
-    print("Distancia = ${distancia} \nTanque = ${tanque}");
+    print("Distancia = ${distancia_largada} unidades \nTanque = ${tanque_combus} unidades");
   }
 
   void abastecer(int valor) {
-    tanque = tanque + valor;
-    print("Tanque depois de abastecido = ${tanque}");
+    tanque_combus = tanque_combus + valor;
+    print("Tanque depois de abastecido = ${tanque_combus} unidades");
   }
 }
 
 void main() {
-  Carro auto = Carro();
+  Carro carro = Carro();
 
-  auto.distancia = 5;
-  auto.tanque = 10;
+  carro.distancia_largada = 5;
+  carro.tanque_combus = 10;
 
-  auto.andar();
-  auto.abastecer(25);
+  carro.andar();
+  carro.abastecer(25);
 }
 
 
 //07//
-class Disciplina {
+class Aluno {
   String matricula = "";
   double nota = 0.0;
 
-  void infor() {
+  void infor_aluno() {
     print("Matricula: ${matricula} \nNota: ${nota}");
   }
 }
 
 void main() {
-  Disciplina aluno = Disciplina();
+  Aluno aluno = Aluno();
 
   aluno.matricula = "2023221LCOM1852";
   aluno.nota = 9.5;
 
-  aluno.infor();
+  aluno.infor_aluno();
 }
 
 
@@ -214,7 +213,7 @@ class Disciplina {
   String matricula = "";
   List<double> lista_notas = [];
 
-  void infor() {
+  void infor_aluno() {
     print("Matricula: ${matricula}");
   }
 
@@ -223,23 +222,30 @@ class Disciplina {
   }
 
   void calcularMedia() {
-    double somatorio = 0;
     double media = 0;
+    double somatorio = 0;
     for (int i = 0; i < lista_notas.length; i++) {
       somatorio = somatorio + lista_notas[i];
     }
     media = somatorio / lista_notas.length;
     print("Notas = ${lista_notas}");
     print("Media = ${media}");
+
+    if (media >= 7.0) {
+      print("Situação = APROVADO");
+    } else {
+      print("Situação = REPROVADO");
+    }
   }
 }
+
 
 void main() {
   Disciplina aluno = Disciplina();
 
   aluno.matricula = "2023221LCOM1852";
 
-  aluno.infor();
+  aluno.infor_aluno();
   aluno.adicionarNota(8.0);
   aluno.adicionarNota(5.5);
   aluno.adicionarNota(7.5);
@@ -247,7 +253,3 @@ void main() {
 
   aluno.calcularMedia();
 }
-
-
-
-
