@@ -62,10 +62,9 @@ class Ponto {
   int x = 0;
   int y = 0;
 
-  void calculo_distanci() {
+  double calcular_distancia() {
     double distancia = sqrt((x * x) + (y * y));
-    print(
-        "A distância do ponto(${x},${y}) para sua origem(0,0) é ${distancia}");
+    return distancia;
   }
 }
 
@@ -74,7 +73,9 @@ void main() {
 
   ponto.x = 7;
   ponto.y = 3;
-  ponto.calculo_distanci();
+  
+  print(
+      "Distancia do ponto 1(${ponto.x},${ponto.y}) para o inicio(0,0) = ${ponto.calcular_distancia()}");
 }
 
 
