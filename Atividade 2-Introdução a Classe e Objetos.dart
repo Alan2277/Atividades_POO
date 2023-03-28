@@ -5,29 +5,31 @@
 
 //01//
 class Lampada {
-
-  String acesa = "";
-  String apagada = "";
+  bool estado = false;
 
   void acender() {
-    print("Lampada ${acesa}");
+    estado = true;
   }
 
   void apagar() {
-    print("Lampada ${apagada}");
+    estado = false;
   }
 }
 
 void main() {
   Lampada lampada = Lampada();
 
-  lampada.apagada = "apagada";
-  lampada.acesa = "acesa";
-  lampada.apagada = "apagada";
-  lampada.acesa = "acesa";
-
   lampada.acender();
+  lampada.apagar();
+  lampada.acender();
+
+  if (lampada.estado == true) {
+    print("Lampada acesa");
+  } else {
+    print("Lampada apagada");
+  }
 }
+
 
 //02//
 class Conta_Banco {
