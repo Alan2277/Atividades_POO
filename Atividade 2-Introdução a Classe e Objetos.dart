@@ -179,8 +179,8 @@ void main() {
   carro.distancia_largada = 5;
   carro.tanque_combus = 10;
 
-  carro.andar();
   carro.abastecer(25);
+  carro.andar();
 }
 
 
