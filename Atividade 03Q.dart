@@ -177,4 +177,64 @@ void main() {
 }
 
 //QUESTÃO 05
+class Conta {
+  String _numeroConta = "";
+  double _saldo = 0.0;
+  String _cliente = "";
+  String _agencia = "";
 
+  Conta(String numero, String cliente, String agencia) {
+    this.numeroConta = numero;
+    this.cliente = cliente;
+    this.agencia = agencia;
+  }
+
+  String get numeroConta {
+    return this._numeroConta;
+  }
+
+  double get saldo {
+    return this._saldo;
+  }
+  
+  String get cliente{
+    return this._cliente;
+  }
+  
+  String get agencia{
+    return this._agencia;
+  }
+
+  void set numeroConta(String numero_Conta) {
+    this._numeroConta = numero_Conta;
+  }
+
+  void adicionar(double valor) {
+    this._saldo = this._saldo + valor;
+  }
+
+  void sacar(double valor) {
+    this._saldo = this._saldo - valor;
+  }
+  
+   void set cliente(String cliente){
+    this._cliente = cliente;
+  }
+  
+  void set agencia(String agencia){
+    this._agencia = agencia;
+  }
+}
+
+
+void main() {
+  Conta c1 = Conta("202", "Evandro", "Banco do Brasil");
+  Conta c2 = Conta("815", "Santos", "Nubank");
+
+  c1.adicionar(120.23);
+  c2.adicionar(32.87);
+  
+  print(" PRIMEIRO CONTA\n Nome: ${c1.cliente}\n Nome da agência: ${c1.agencia}\n Número da Conta: ${c1.numeroConta}\n Saldo: ${c1.saldo}");
+  print("------------------------------------------------------------------");
+  print(" SEGUNDO CONTA\n Nome: ${c2.cliente}\n Nome da agência: ${c2.agencia}\n Número da Conta: ${c2.numeroConta}\n Saldo: ${c2.saldo}");
+}
