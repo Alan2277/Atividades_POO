@@ -245,7 +245,7 @@ class Conta {
 
 //Execução
 void main() {
-  Conta c1 = Conta("202", "Galvão", "Nubank", "022");
+  Conta c1 = Conta("202", "Evandro", "Nubank", "022");
   Conta c2 = Conta("815", "Santos", "Nubank", "022");
 
   c1.adicionar(120.23);
