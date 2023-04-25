@@ -251,7 +251,7 @@ void main() {
   c1.adicionar(120.23);
   c2.adicionar(32.87);
   
-  print(" PRIMEIRO CONTA\n Cliente: ${c1.cliente}\n Nome da agência: ${c1.agencia}\n Codigo da agência: ${c1.codAgencia}\n Número da Conta: ${c1.numeroConta}\n Saldo: ${c1.saldo}");
+  print(" PRIMEIRO CONTA\n Nome da agência: ${c1.agencia}\n Codigo da agência: ${c1.codAgencia}\n Cliente: ${c1.cliente}\n Número da Conta: ${c1.numeroConta}\n Saldo: ${c1.saldo}");
   print("------------------------------------------------------------------");
-  print(" SEGUNDO CONTA\n Cliente: ${c2.cliente}\n Nome da agência: ${c2.agencia}\n Codigo da agência: ${c1.codAgencia}\n Número da Conta: ${c2.numeroConta}\n Saldo: ${c2.saldo}");
+  print(" SEGUNDO CONTA\n Nome da agência: ${c2.agencia}\n Codigo da agência: ${c1.codAgencia}\n Cliente: ${c2.cliente}\n Número da Conta: ${c2.numeroConta}\n Saldo: ${c2.saldo}");
 }
