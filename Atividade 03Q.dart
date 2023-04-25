@@ -177,16 +177,19 @@ void main() {
 }
 
 //QUESTÃO 05
+//Class
 class Conta {
   String _numeroConta = "";
   double _saldo = 0.0;
   String _cliente = "";
   String _agencia = "";
+  String _codAgencia = "";
 
-  Conta(String numero, String cliente, String agencia) {
+  Conta(String numero, String cliente, String agencia, String codigo) {
     this.numeroConta = numero;
     this.cliente = cliente;
     this.agencia = agencia;
+    this.codAgencia = codigo;
   }
 
   String get numeroConta {
@@ -196,13 +199,17 @@ class Conta {
   double get saldo {
     return this._saldo;
   }
-  
-  String get cliente{
+
+  String get cliente {
     return this._cliente;
   }
-  
-  String get agencia{
+
+  String get agencia {
     return this._agencia;
+  }
+
+  String get codAgencia {
+    return this._codAgencia;
   }
 
   void set numeroConta(String numero_Conta) {
@@ -216,17 +223,21 @@ class Conta {
   void sacar(double valor) {
     this._saldo = this._saldo - valor;
   }
-  
-   void set cliente(String cliente){
+
+  void set cliente(String cliente) {
     this._cliente = cliente;
   }
-  
-  void set agencia(String agencia){
+
+  void set agencia(String agencia) {
     this._agencia = agencia;
+  }
+
+  void set codAgencia(String codigo_Agencia) {
+    this._codAgencia = codigo_Agencia;
   }
 }
 
-
+//Execução
 void main() {
   Conta c1 = Conta("202", "Galvão", "Nubank", "022");
   Conta c2 = Conta("815", "Santos", "Nubank", "022");
