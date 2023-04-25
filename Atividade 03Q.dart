@@ -129,6 +129,7 @@ void main() {
 }
 
 //QUESTÃO 04
+//Class
 class Conta {
   String _numeroConta = "";
   double _saldo = 0.0;
@@ -168,7 +169,7 @@ class Conta {
   }
 }
 
-
+//Execução
 void main() {
   Conta c1 = Conta("202", "Evandro");
   Conta c2 = Conta("815", "Santos");
