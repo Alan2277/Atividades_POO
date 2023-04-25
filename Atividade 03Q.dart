@@ -29,12 +29,12 @@ class Cliente {
 import 'Cliente.dart';
 
 void main() {
-  Cliente c1 = Cliente("Alan Sampaio", "859-36");
-  Cliente c2 = Cliente("João", "148-06");
+  Cliente cliente1 = Cliente("Alan Sampaio", "859-36");
+  Cliente cliente2 = Cliente("João", "148-06");
 
-  print(" PRIMEIRO CLIENTE\n Nome: ${c1.nome}\n Codigo: ${c1.codigo}");
+  print(" PRIMEIRO CLIENTE\n Nome: ${cliente1.nome}\n Codigo: ${cliente1.codigo}");
   print("------------------------------------------------------------------");
-  print(" SEGUNDO CLIENTE\n Nome: ${c2.nome}\n Codigo: ${c2.codigo}");
+  print(" SEGUNDO CLIENTE\n Nome: ${cliente2.nome}\n Codigo: ${cliente2.codigo}");
 
 }
 
