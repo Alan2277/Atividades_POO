@@ -85,3 +85,44 @@ class Conta {
     this._saldo = this._saldo - valor;
   }
 }
+
+//Questão 03
+import 'Cliente.dart';
+import 'Agencia.dart';
+import 'Conta.dart';
+
+void main() {
+  Conta c1 = Conta("202-63");
+  Conta c2 = Conta("815-20");
+  Cliente cliente1 = Cliente("Alan", "233");
+  Cliente cliente2 = Cliente("Sampaio", "862");
+
+  c1.adicionar(120.23);
+  c2.adicionar(32.87);
+
+  print(" PRIMEIRO CONTA\n Cliente: ${cliente1.nome}\n Número da Conta: ${c1.numeroConta}\n Saldo: ${c1.saldo}");
+  print("------------------------------------------------------------------");
+  print(" SEGUNDA CONTA\n Cliente: ${cliente2.nome}\n Número da Conta: ${c2.numeroConta}\n Saldo: ${c2.saldo}");
+}
+
+//Questão 04
+import 'Cliente.dart';
+import 'Agencia.dart';
+import 'Conta.dart';
+
+void main() {
+  Conta c1 = Conta("202");
+  Conta c2 = Conta("815");
+  Cliente cliente1 = Cliente("Alan", "233");
+  Cliente cliente2 = Cliente("Sampaio", "862");
+  Agencia a1 = Agencia("022", "Nubank");
+  Agencia a2 = Agencia("022", "Nubank");
+
+  c1.adicionar(120.23);
+  c2.adicionar(32.87);
+
+  print(" PRIMEIRO CONTA\n Cliente: ${cliente1.nome}\n Agencia: ${a1.numero}\n Banco: ${a1.nome}\n Número da Conta: ${c1.numeroConta}\n Saldo: ${c1.saldo}");
+  print("------------------------------------------------------------------");
+  print(" SEGUNDA CONTA\n Cliente: ${cliente2.nome}\n Agencia: ${a2.numero}\n Banco: ${a2.nome}\n Número da Conta: ${c2.numeroConta}\n Saldo: ${c2.saldo}");
+}
+
