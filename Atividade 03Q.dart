@@ -228,13 +228,13 @@ class Conta {
 
 
 void main() {
-  Conta c1 = Conta("202", "Evandro", "Nubank");
-  Conta c2 = Conta("815", "Santos", "Nubank");
+  Conta c1 = Conta("202", "Galvão", "Nubank", "022");
+  Conta c2 = Conta("815", "Santos", "Nubank", "022");
 
   c1.adicionar(120.23);
   c2.adicionar(32.87);
   
-  print(" PRIMEIRO CONTA\n Nome: ${c1.cliente}\n Nome da agência: ${c1.agencia}\n Número da Conta: ${c1.numeroConta}\n Saldo: ${c1.saldo}");
+  print(" PRIMEIRO CONTA\n Nome: ${c1.cliente}\n Nome da agência: ${c1.agencia}\n Codigo da agência: ${c1.codAgencia}\n Número da Conta: ${c1.numeroConta}\n Saldo: ${c1.saldo}");
   print("------------------------------------------------------------------");
-  print(" SEGUNDO CONTA\n Nome: ${c2.cliente}\n Nome da agência: ${c2.agencia}\n Número da Conta: ${c2.numeroConta}\n Saldo: ${c2.saldo}");
+  print(" SEGUNDO CONTA\n Nome: ${c2.cliente}\n Nome da agência: ${c2.agencia}\n Codigo da agência: ${c1.codAgencia}\n Número da Conta: ${c2.numeroConta}\n Saldo: ${c2.saldo}");
 }
