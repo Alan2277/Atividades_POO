@@ -53,7 +53,7 @@ void main() {
       "------------------------------------------------------\n                       INGRESSO MEIA\n------------------------------------------------------\n");
 
   IngressoMeia ingressoMeia1 =
-      IngressoMeia(valor: 40.50, validade: true, desconto: 50.0);
+      IngressoMeia(valor: 40.99, validade: true, desconto: 50.0);
   if (ingressoMeia1.usar() == true) {
     print(
         "Código 123:\n Ingresso pronto para ser usado.\n Entrada liberada para sala do filme.\n Desconto: ${ingressoMeia1.desconto}%\n Valor total do ingresso: ${ingressoMeia1.getPreco()}\n");
